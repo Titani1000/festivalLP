@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+ /* スライダー用SCSS */
+.slider {
+  z-index: -10;
+  width: 70%;
+  position: relative;
+}
+
+.news_slider {
+  width: 100%;
+}
+
+ /* 背景画像の設定 */
+.slider_item01 {
+  background: url(../image/top_slider/andon.jpg);
+}
+.slider_item02 {
+  background: url(../image/top_slider/fire.jpg);
+}
+.slider_item03 {
+  background: url(../image/top_slider/hanabi.jpg);
+}
+
+.slider_item {
+  width: 100%;
+  height: 90vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* スライダー要素レスポンシブ対応 */
+@media screen and (max-width: 780px) {
+  .slider {
+    width: 100%;
+  }
+}
+
+/* ギャラリー用スライダー要素 */
+.gallery_slider {
+  width: 94%;
+  margin: 0 auto;
+}
+
+.gallery_slider img {
+  width: 100%;
+  height: auto;
+  background: cover;
+}
+
+/* スライド左右の余白調整 */
+.gallery_slider .slick-slide {
+  margin:0 10px;
+}
+
+/* 矢印の設定 */
+.slick-prev, 
+.slick-next {
+  position: absolute;
+  top: 42%;
+  cursor: pointer;
+  outline: none;
+  border-top: 2px solid #666;
+  border-right: 2px solid #666;
+  height: 15px;
+  width: 15px;
+}
+
+/* 戻る矢印 */
+.slick-prev {
+  left: -1.5%;
+  transform: rotate(-135deg);
+}
+
+/* 次へ矢印 */
+.slick-next {
+  right: -1.5%;
+  transform: rotate(45deg);
+}
+
+/* ドットナビゲーション */
+.slick-dots {
+  text-align:center;
+  margin: 20px 0;
+}
+
+.slick-dots li {
+  display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+  color: transparent;
+  outline: none;
+  width:10px;
+  height:10px;
+  display:block;
+  border-radius:50%;
+  background:#ccc;
+}
+
+.gallery_slider .slick-dots .slick-active button {
+  background: #c9171e;
+}

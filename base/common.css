@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+  position: relative;
+  box-sizing: border-box;
+}
+body {
+  background: #f3f3f3 url(../image/common/bg_washi.png);
+  font-family: 'Noto Serif JP', serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  word-break: break-all;
+  color: #222;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #222;
+}
+
+li {
+  list-style: none;
+}
